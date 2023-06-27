@@ -1,0 +1,46 @@
+{
+  "FIREWALL": {
+    "NETWORK_SLOWNESS": [
+      "Navigation",
+      "Login",
+      "Pay",
+      "Checkout",
+      "View Account",
+      "Search / List Product",
+      "View Product Details",
+      "View Home Page"
+    ],
+    "NETWORK_FAILURE": [
+      "Navigation",
+      "Login",
+      "Pay",
+      "Checkout",
+      "View Account",
+      "Search / List Product",
+      "View Product Details",
+      "View Home Page"
+    ]
+  },
+  "API_GATEWAY": {
+    "INSTANCE_DOWN" : [
+      "Navigation",
+      "Login",
+      "Pay",
+      "Checkout",
+      "View Account",
+      "Search / List Product",
+      "View Product Details",
+      "View Home Page"
+    ],
+    "PERFORMANCE_ISSUE" : [
+      "Navigation",
+      "Login",
+      "Pay",
+      "Checkout",
+      "View Account",
+      "Search / List Product",
+      "View Product Details",
+      "View Home Page"
+    ]
+  }
+}

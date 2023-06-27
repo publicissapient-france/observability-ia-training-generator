@@ -1,0 +1,22 @@
+{
+  "NETWORK_FAILURE": [
+    "traffic drop",
+    "transactions drop",
+    "Home Page monitoring KO"
+  ],
+  "NETWORK_SLOWNESS" : [
+    "traffic drop",
+    "transactions drop",
+    "Home Page monitoring alternates OK and KO"
+  ],
+  "PERFORMANCE_ISSUE" : [
+    "traffic drop",
+    "transactions drop",
+    "Home Page monitoring alternates OK and KO"
+  ],
+  "INSTANCE_DOWN" : [
+    "traffic drop",
+    "transactions drop",
+    "Home Page monitoring KO"
+  ]
+}
