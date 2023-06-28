@@ -6,10 +6,139 @@
         "impactLevel" : "MEDIUM"
       },
       {
+        "featureName" : "Login",
+        "impactLevel" : "MEDIUM"
+      },
+      {
+        "featureName" : "Pay",
+        "impactLevel" :  "MEDIUM"
+      },
+      {
+        "featureName" : "Checkout",
+        "impactLevel" :  "MEDIUM"
+      },
+      {
+        "featureName" : "View Account",
+        "impactLevel" :  "MEDIUM"
+      },
+      {
+        "featureName" : "Search / List Product",
+        "impactLevel" :  "MEDIUM"
+      },
+      {
+        "featureName" : "View Product Details",
+        "impactLevel" :  "MEDIUM"
+      },
+      {
+        "featureName" : "View Home Page",
+        "impactLevel" :  "MEDIUM"
+      }
+      ],
+    "NETWORK_FAILURE" : [
+
+      {
+        "featureName" : "Navigation",
+        "impactLevel" : "HIGH"
+      },
+      {
+        "featureName" : "Login",
+        "impactLevel" : "HIGH"
+      },
+      {
+        "featureName" : "Pay",
+        "impactLevel" :  "HIGH"
+      },
+      {
+        "featureName" : "Checkout",
+        "impactLevel" :  "HIGH"
+      },
+      {
+        "featureName" : "View Account",
+        "impactLevel" :  "HIGH"
+      },
+      {
+        "featureName" : "Search / List Product",
+        "impactLevel" :  "HIGH"
+      },
+      {
+        "featureName" : "View Product Details",
+        "impactLevel" :  "HIGH"
+      },
+      {
+        "featureName" : "View Home Page",
+        "impactLevel" :  "HIGH"
+      }
+    ]
+  },
+  "API_GATEWAY" : {
+    "INSTANCE_DOWN" : [
+      {
+        "featureName" : "Navigation",
+        "impactLevel" : "HIGH"
+      },
+      {
+        "featureName" : "Login",
+        "impactLevel" : "HIGH"
+      },
+      {
+        "featureName" : "Pay",
+        "impactLevel" :  "HIGH"
+      },
+      {
+        "featureName" : "Checkout",
+        "impactLevel" :  "HIGH"
+      },
+      {
+        "featureName" : "View Account",
+        "impactLevel" :  "HIGH"
+      },
+      {
+        "featureName" : "Search / List Product",
+        "impactLevel" :  "HIGH"
+      },
+      {
+        "featureName" : "View Product Details",
+        "impactLevel" :  "HIGH"
+      },
+      {
+        "featureName" : "View Home Page",
+        "impactLevel" :  "HIGH"
+      }
+    ],
+    "PERFORMANCE_ISSUE": [
+      {
         "featureName" : "Navigation",
         "impactLevel" : "MEDIUM"
+      },
+      {
+        "featureName" : "Login",
+        "impactLevel" : "MEDIUM"
+      },
+      {
+        "featureName" : "Pay",
+        "impactLevel" :  "MEDIUM"
+      },
+      {
+        "featureName" : "Checkout",
+        "impactLevel" :  "MEDIUM"
+      },
+      {
+        "featureName" : "View Account",
+        "impactLevel" :  "MEDIUM"
+      },
+      {
+        "featureName" : "Search / List Product",
+        "impactLevel" :  "MEDIUM"
+      },
+      {
+        "featureName" : "View Product Details",
+        "impactLevel" :  "MEDIUM"
+      },
+      {
+        "featureName" : "View Home Page",
+        "impactLevel" :  "MEDIUM"
       }
-      ]
+    ]
   }
 
 }
