@@ -25,16 +25,16 @@ class SpringCommandLineApplication(private val configuration: Configuration) : C
                 val question = "How is my system running ?"
                 val prompt = context?.stream()?.collect(Collectors.joining(",")) + "\n" + question
 
-                impactedFeaturedByOutage.value.forEach { impactedFeature ->
-                    val completion =
-                        "degradation experience on " +
-                        impactedFeature +
-                        " due to " +
-                        impactedFeaturedByOutage.key +
-                        " on " +
+                val impactedFeatures = impactedFeaturedByOutage.value.map { impactedFeature ->
+                    impactedFeature.impactLevel.display + " " +
+                    "degraded experience on "+
+                    impactedFeature.featureName
+                }.stream().collect(Collectors.joining("\n"))
+
+                val completion = impactedFeatures + "\ndue to " +
+                        impactedFeaturedByOutage.key + " on " +
                         impactedFeaturedByOutageAndService.key
-                    println("$prompt;$completion")
-                }
+                println("$prompt;$completion")
             }
         }
     }

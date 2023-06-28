@@ -8,12 +8,12 @@ import org.springframework.context.annotation.Configuration
 
 @Configuration
 class Configuration {
-    val serviceToImpactedFeature: Map<ServiceEnum, Map<OutageEnum,List<String>>> =
+    val serviceToImpactedFeature: Map<ServiceEnum, Map<OutageEnum,List<ImpactedFeature>>> =
         ObjectMapper()
             .registerKotlinModule()
             .readValue(
                 javaClass.getResource("/impactedFeatureByOutageByServices.json"),
-                object : TypeReference<Map<ServiceEnum, Map<OutageEnum,List<String>>>>() {})
+                object : TypeReference<Map<ServiceEnum, Map<OutageEnum,List<ImpactedFeature>>>>() {})
 
 
 
@@ -25,6 +25,10 @@ class Configuration {
                 object : TypeReference<Map<OutageEnum, List<String>>>() {})
 
 
+
+}
+
+data class ImpactedFeature(val featureName: String, val impactLevel : ImpactLevel) {
 
 }
 
