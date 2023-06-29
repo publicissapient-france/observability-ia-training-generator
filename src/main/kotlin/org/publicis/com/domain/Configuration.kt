@@ -12,7 +12,7 @@ class Configuration {
         ObjectMapper()
             .registerKotlinModule()
             .readValue(
-                javaClass.getResource("/impactedFeatureByOutageByServices.json"),
+                javaClass.getResource("/impactedFeaturesConfiguration.json"),
                 object : TypeReference<Map<ServiceEnum, Map<OutageEnum,List<ImpactedFeature>>>>() {})
 
 
@@ -21,7 +21,7 @@ class Configuration {
         ObjectMapper()
             .registerKotlinModule()
             .readValue(
-                javaClass.getResource("/observabilityEvenByOutage.json"),
+                javaClass.getResource("/observabilityEvenByOutageConfiguration.json"),
                 object : TypeReference<Map<OutageEnum, List<String>>>() {})
 
 
