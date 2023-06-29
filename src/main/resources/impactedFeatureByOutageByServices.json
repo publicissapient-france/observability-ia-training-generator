@@ -33,7 +33,7 @@
         "featureName" : "View Home Page",
         "impactLevel" :  "MEDIUM"
       }
-      ],
+    ],
     "NETWORK_FAILURE" : [
 
       {
@@ -139,6 +139,394 @@
         "impactLevel" :  "MEDIUM"
       }
     ]
+  },
+
+  "AUTHENTICATION": {
+    "INSTANCE_DOWN": [
+      {
+        "featureName" : "Login",
+        "impactLevel" : "HIGH"
+      }
+    ],
+    "PERFORMANCE_ISSUE" : [
+      {
+        "featureName" : "Login",
+        "impactLevel" : "MEDIUM"
+      }
+    ],
+    "STABILITY_ISSUE" : [
+      {
+        "featureName" : "Login",
+        "impactLevel" : "HIGH"
+      }
+    ]
+  },
+
+  "PAYMENT_API": {
+    "INSTANCE_DOWN": [
+      {
+        "featureName" : "Pay",
+        "impactLevel" :  "HIGH"
+      },
+      {
+        "featureName" : "Checkout",
+        "impactLevel" :  "HIGH"
+      }
+    ],
+    "PERFORMANCE_ISSUE" : [
+      {
+        "featureName" : "Pay",
+        "impactLevel" :  "HIGH"
+      },
+      {
+        "featureName" : "Checkout",
+        "impactLevel" :  "HIGH"
+      }
+    ]
+  },
+
+  "PAYMENT_SERVICE_PROVIDER": {
+    "INSTANCE_DOWN": [
+      {
+        "featureName" : "Pay",
+        "impactLevel" :  "HIGH"
+      }
+    ],
+    "PERFORMANCE_ISSUE" : [
+      {
+        "featureName" : "Pay",
+        "impactLevel" :  "MEDIUM"
+      }
+    ],
+    "STABILITY_ISSUE" : [
+      {
+        "featureName" : "Pay",
+        "impactLevel" :  "HIGH"
+      }
+    ]
+  },
+  "ACCOUNT_API": {
+    "INSTANCE_DOWN": [
+      {
+        "featureName" : "Login",
+        "impactLevel" : "HIGH"
+      },
+      {
+        "featureName" : "Checkout",
+        "impactLevel" :  "MEDIUM"
+      },
+      {
+        "featureName" : "View Account",
+        "impactLevel" :  "HIGH"
+      },
+      {
+        "featureName" : "View Home Page",
+        "impactLevel" :  "MEDIUM"
+      }
+    ],
+    "PERFORMANCE_ISSUE" : [
+      {
+        "featureName" : "Login",
+        "impactLevel" : "MEDIUM"
+      },
+      {
+        "featureName" : "Checkout",
+        "impactLevel" :  "MEDIUM"
+      },
+      {
+        "featureName" : "View Account",
+        "impactLevel" :  "HIGH"
+      },
+      {
+        "featureName" : "View Home Page",
+        "impactLevel" :  "LOW"
+      }
+    ],
+    "STABILITY_ISSUE" : [
+      {
+        "featureName" : "Login",
+        "impactLevel" : "HIGH"
+      },
+      {
+        "featureName" : "Checkout",
+        "impactLevel" :  "MEDIUM"
+      },
+      {
+        "featureName" : "View Account",
+        "impactLevel" :  "HIGH"
+      },
+      {
+        "featureName" : "View Home Page",
+        "impactLevel" :  "LOW"
+      }
+    ]
+  },
+
+  "ACCOUNT_DATABASE": {
+    "INSTANCE_DOWN": [
+      {
+        "featureName" : "Login",
+        "impactLevel" : "HIGH"
+      },
+      {
+        "featureName" : "Checkout",
+        "impactLevel" :  "MEDIUM"
+      },
+      {
+        "featureName" : "View Account",
+        "impactLevel" :  "HIGH"
+      },
+      {
+        "featureName" : "View Home Page",
+        "impactLevel" :  "MEDIUM"
+      }
+    ],
+    "PERFORMANCE_ISSUE" : [
+      {
+        "featureName" : "Login",
+        "impactLevel" : "MEDIUM"
+      },
+      {
+        "featureName" : "Checkout",
+        "impactLevel" :  "LOW"
+      },
+      {
+        "featureName" : "View Account",
+        "impactLevel" :  "HIGH"
+      },
+      {
+        "featureName" : "View Home Page",
+        "impactLevel" :  "LOW"
+      }
+    ],
+    "MISDELIVERY_BAD_REQUEST" : [
+      {
+        "featureName" : "Login",
+        "impactLevel" : "MEDIUM"
+      },
+      {
+        "featureName" : "Checkout",
+        "impactLevel" :  "MEDIUM"
+      },
+      {
+        "featureName" : "View Account",
+        "impactLevel" :  "HIGH"
+      },
+      {
+        "featureName" : "View Home Page",
+        "impactLevel" :  "MEDIUM"
+      }
+    ]
+  },
+  "PRODUCT_API": {
+    "INSTANCE_DOWN": [
+      {
+        "featureName" : "Navigation",
+        "impactLevel" : "MEDIUM"
+      },
+      {
+        "featureName" : "Checkout",
+        "impactLevel" :  "HIGH"
+      },
+      {
+        "featureName" : "Search / List Product",
+        "impactLevel" :  "HIGH"
+      },
+      {
+        "featureName" : "View Product Details",
+        "impactLevel" :  "HIGH"
+      },
+      {
+        "featureName" : "View Home Page",
+        "impactLevel" :  "HIGH"
+      }
+    ],
+    "PERFORMANCE_ISSUE" : [
+      {
+        "featureName" : "Navigation",
+        "impactLevel" : "LOW"
+      },
+      {
+        "featureName" : "Checkout",
+        "impactLevel" :  "MEDIUM"
+      },
+      {
+        "featureName" : "Search / List Product",
+        "impactLevel" :  "HIGH"
+      },
+      {
+        "featureName" : "View Product Details",
+        "impactLevel" :  "HIGH"
+      },
+      {
+        "featureName" : "View Home Page",
+        "impactLevel" :  "HIGH"
+      }
+    ]
+  },
+  "PRODUCT_DATABASE": {
+    "INSTANCE_DOWN": [
+      {
+        "featureName" : "Navigation",
+        "impactLevel" : "LOW"
+      },
+      {
+        "featureName" : "Checkout",
+        "impactLevel" :  "HIGH"
+      },
+      {
+        "featureName" : "Search / List Product",
+        "impactLevel" :  "HIGH"
+      },
+      {
+        "featureName" : "View Product Details",
+        "impactLevel" :  "HIGH"
+      },
+      {
+        "featureName" : "View Home Page",
+        "impactLevel" :  "HIGH"
+      }
+    ],
+    "PERFORMANCE_ISSUE" : [
+      {
+        "featureName" : "Navigation",
+        "impactLevel" : "LOW"
+      },
+      {
+        "featureName" : "Checkout",
+        "impactLevel" :  "MEDIUM"
+      },
+      {
+        "featureName" : "Search / List Product",
+        "impactLevel" :  "HIGH"
+      },
+      {
+        "featureName" : "View Product Details",
+        "impactLevel" :  "HIGH"
+      },
+      {
+        "featureName" : "View Home Page",
+        "impactLevel" :  "HIGH"
+      }
+    ],
+    "MISDELIVERY_BAD_REQUEST" : [
+      {
+        "featureName" : "Navigation",
+        "impactLevel" : "LOW"
+      },
+      {
+        "featureName" : "Checkout",
+        "impactLevel" :  "HIGH"
+      },
+      {
+        "featureName" : "Search / List Product",
+        "impactLevel" :  "HIGH"
+      },
+      {
+        "featureName" : "View Product Details",
+        "impactLevel" :  "HIGH"
+      },
+      {
+        "featureName" : "View Home Page",
+        "impactLevel" :  "HIGH"
+      }
+    ]
+  },
+
+  "ORDER_API": {
+    "INSTANCE_DOWN": [
+      {
+        "featureName" : "Pay",
+        "impactLevel" :  "MEDIUM"
+      },
+      {
+        "featureName" : "Checkout",
+        "impactLevel" :  "HIGH"
+      },
+      {
+        "featureName" : "View Account",
+        "impactLevel" :  "MEDIUM"
+      },
+      {
+        "featureName" : "View Home Page",
+        "impactLevel" :  "MEDIUM"
+      }
+    ],
+    "PERFORMANCE_ISSUE" : [
+      {
+        "featureName" : "Pay",
+        "impactLevel" :  "LOW"
+      },
+      {
+        "featureName" : "Checkout",
+        "impactLevel" :  "HIGH"
+      },
+      {
+        "featureName" : "View Account",
+        "impactLevel" :  "MEDIUM"
+      },
+      {
+        "featureName" : "View Home Page",
+        "impactLevel" :  "MEDIUM"
+      }
+    ]
+  },
+  "ORDER_DATABASE": {
+    "INSTANCE_DOWN": [
+      {
+        "featureName" : "Pay",
+        "impactLevel" :  "MEDIUM"
+      },
+      {
+        "featureName" : "Checkout",
+        "impactLevel" :  "HIGH"
+      },
+      {
+        "featureName" : "View Account",
+        "impactLevel" :  "MEDIUM"
+      },
+      {
+        "featureName" : "View Home Page",
+        "impactLevel" :  "MEDIUM"
+      }
+    ],
+    "PERFORMANCE_ISSUE" : [
+      {
+        "featureName" : "Pay",
+        "impactLevel" :  "LOW"
+      },
+      {
+        "featureName" : "Checkout",
+        "impactLevel" :  "HIGH"
+      },
+      {
+        "featureName" : "View Account",
+        "impactLevel" :  "MEDIUM"
+      },
+      {
+        "featureName" : "View Home Page",
+        "impactLevel" :  "MEDIUM"
+      }
+    ],
+    "MISDELIVERY_BAD_REQUEST" : [
+      {
+        "featureName" : "Pay",
+        "impactLevel" :  "MEDIUM"
+      },
+      {
+        "featureName" : "Checkout",
+        "impactLevel" :  "HIGH"
+      },
+      {
+        "featureName" : "View Account",
+        "impactLevel" :  "HIGH"
+      },
+      {
+        "featureName" : "View Home Page",
+        "impactLevel" :  "HIGH"
+      }
+    ]
   }
 
 }
+

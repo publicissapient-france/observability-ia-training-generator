@@ -3,5 +3,13 @@ package org.publicis.com.domain
 enum class ServiceEnum {
     ACCOUNT_API,
     FIREWALL,
-    API_GATEWAY
+    API_GATEWAY,
+    AUTHENTICATION,
+    PAYMENT_API,
+    PAYMENT_SERVICE_PROVIDER,
+    ACCOUNT_DATABASE,
+    PRODUCT_API,
+    PRODUCT_DATABASE,
+    ORDER_API,
+    ORDER_DATABASE
 }

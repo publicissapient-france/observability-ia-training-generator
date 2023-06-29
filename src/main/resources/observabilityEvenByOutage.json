@@ -18,5 +18,15 @@
     "traffic drop",
     "transactions drop",
     "Home Page monitoring KO"
+  ],
+  "MISDELIVERY_BAD_REQUEST" : [
+    "database request slow",
+    "database request drop",
+    "database request SQL error"
+  ],
+  "STABILITY_ISSUE" : [
+    "traffic drop",
+    "transactions drop",
+    "Home Page monitoring alternates OK and KO"
   ]
 }
