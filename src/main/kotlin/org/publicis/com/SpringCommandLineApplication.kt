@@ -19,22 +19,34 @@ class SpringCommandLineApplication(private val configuration: Configuration) : C
 
         configuration.serviceToImpactedFeature.forEach { impactedFeaturedByOutageAndService ->
             impactedFeaturedByOutageAndService.value.entries.forEach { impactedFeaturedByOutage ->
-                val context = configuration.outageToObservabilityEvent[impactedFeaturedByOutage.key]?.map {
-                    it + " on " + impactedFeaturedByOutageAndService.key
+
+                val context = "System logs: \\n " + configuration.outageToObservabilityEvent[impactedFeaturedByOutage.key]?.map {
+                    it + " on " + impactedFeaturedByOutageAndService.key.display
+                }?.stream()?.collect(Collectors.joining(".\\n"))
+
+                val generalQuestion = "Question: How is my system running ?"
+
+
+
+                configuration.serviceToImpactedFeature.keys.forEach {
+                    val questionService = "Question: How is " + it.display + " running ?\\n"
+                    if(it == impactedFeaturedByOutageAndService.key){
+                        val impactedFeatures = impactedFeaturedByOutage.value.map { impactedFeature ->
+                            impactedFeature.impactLevel.display + " " +
+                                    "degraded experience on "+
+                                    impactedFeature.featureName
+                        }.stream().collect(Collectors.joining("\\n"))
+
+
+                        val completion = impactedFeatures + " due to " +
+                                impactedFeaturedByOutage.key.display + " on " +
+                                impactedFeaturedByOutageAndService.key.display
+                        println("$context ### $generalQuestion,$completion END")
+                        println("$context ### $questionService,$completion END")
+                    }else {
+                        println("$context ### $questionService,no issue detected on service ${it.display} END")
+                    }
                 }
-                val question = "How is my system running ?"
-                val prompt = context?.stream()?.collect(Collectors.joining(",")) + "\n" + question
-
-                val impactedFeatures = impactedFeaturedByOutage.value.map { impactedFeature ->
-                    impactedFeature.impactLevel.display + " " +
-                    "degraded experience on "+
-                    impactedFeature.featureName
-                }.stream().collect(Collectors.joining("\n"))
-
-                val completion = impactedFeatures + "\ndue to " +
-                        impactedFeaturedByOutage.key + " on " +
-                        impactedFeaturedByOutageAndService.key
-                println("$prompt;$completion")
             }
         }
     }
